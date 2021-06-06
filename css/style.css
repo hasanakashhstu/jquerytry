@@ -1,3 +1,31 @@
-p{
-color:red;
+  <!-- for access class id tag -->
+
+li{
+  margin: 10px;
+}
+
+#container{
+padding: 30px;
+background-color: gray;
+}
+.class1{
+  background-color: orange;
+}
+.class2{
+  background-color: purple;
+}
+.bold{
+color: red;
+background-color: blue;
+}
+.bold2{
+
+background-color: yellow;
+}
+
+
+  <!-- travarsing  HTML DOM -->
+.creature{
+ border: 5px solid red;
+
 }

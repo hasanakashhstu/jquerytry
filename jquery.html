@@ -10,11 +10,34 @@
   </head>
   <body>
 
+  <!-- for access class id tag -->
+<div id="container">
     <h2>An unordered HTML list</h2>
-    <ul style="list-style-type:none;">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
+    <ul id="list" style="">
+      <li class="class1">Coffee</li>
+      <li class="class1">Tea</li>
+      <li class="class1">Milk</li>
+      <li>
+        <div>
+        <ul style="list-style-type:none;">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+      </div>
+      </li>
+      <li class="class2">Coffee</li>
+      <li class="class2">Tea</li>
+      <li class="class2">Milk</li>
+    </ul>
+</div>
+
+<div>
+    <h2>An unordered HTML list</h2>
+    <ul style="">
+      <li class="class1">Coffee</li>
+      <li class="class1">Tea</li>
+      <li class="class1">Milk</li>
       <li>
         <ul style="list-style-type:none;">
           <li>Coffee</li>
@@ -22,8 +45,47 @@
           <li>Milk</li>
         </ul>
       </li>
+      <li class="class2">Coffee</li>
+      <li class="class2">Tea</li>
+      <li class="class2">Milk</li>
+    </ul>
+</div>
 
-    </ul
+
+<form  class="form" action="jquery.html">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" required><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" required><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+  <label for="gander">Gender:</label>
+  <input type="text" id="gander" name="gander"><br><br>
+  <label for="lname">Message:</label>
+  <textarea form="usrform">
+Enter text here...</textarea><br><br>
+  <input type="submit" value="Submit"> &nbsp;  &nbsp;  &nbsp;
+  <input type="submit" formaction="jquery.html" value="Submit as Admin">
+</form>
+<br><br><br>
+
+  <!-- travarsing  HTML DOM -->
+
+  <div id="animels" class="creature"> Animels
+    <div class="creature">Mamals
+      <div class="creature">Dog</div>
+      <div class="creature">Cat</div>
+      <div class="terain">Forest</div>
+      <div class="terain">Tree</div>
+  </div>
+    <div class="creature">
+      <div class="creature">Snake</div>
+      <div class="creature">Lizard</div>
+      <div class="terain">Jangal</div>
+    </div>
+  </div>
 
   </body>
 </html>
